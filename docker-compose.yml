@@ -13,8 +13,8 @@ services:
       - './etc-pihole:/etc/pihole'
       - './etc-dnsmasq.d:/etc/dnsmasq.d'
     ports:
-      - "172.30.9.15:53:53/tcp"
-      - "172.30.9.15:53:53/udp"
+      - "IP_HOST:53:53/tcp"
+      - "IP_HOST:53:53/udp"
       - "67:67/udp"
       - "8080:80/tcp"
     dns:
